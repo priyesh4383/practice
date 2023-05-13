@@ -51,4 +51,61 @@ Writing objects: 100% (3/3), 211 bytes | 211.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/priyesh4383/practice.git
  * [new branch]      main -> main
+PS C:\git> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ps.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        guide to push to github.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\git> git add guide to push to github.txt
+fatal: pathspec 'guide' did not match any files
+PS C:\git> git add guide to push to github.txt
+fatal: pathspec 'guide' did not match any files
+PS C:\git> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ps.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        guide to push to github.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\git> git add guide to push to github.txt
+fatal: pathspec 'guide' did not match any files
+PS C:\git> git add .
+PS C:\git> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   guide to push to github.txt
+        deleted:    ps.txt
+
+PS C:\git> git commit -m "321"
+[main 5904002] 321
+ 2 files changed, 54 insertions(+)
+ create mode 100644 guide to push to github.txt
+ delete mode 100644 ps.txt
+PS C:\git> git branch
+* main
+PS C:\git> git remote -v
+origin  https://github.com/priyesh4383/practice.git (fetch)
+origin  https://github.com/priyesh4383/practice.git (push)
+PS C:\git> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 971 bytes | 971.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/priyesh4383/practice.git
+   541c98b..5904002  main -> main
 PS C:\git>
